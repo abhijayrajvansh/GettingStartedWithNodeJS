@@ -15,3 +15,6 @@ fs.readFile("./contact.txt", "utf-8", (err, result) => {
     console.log(result)
   }
 })
+
+
+fs.appendFileSync("./newFile.txt", `new line ${Date.now()}\n`)
